@@ -22,9 +22,15 @@ public class Plane extends Mobile {
 		ArrayList<IMobile> list = this.getDogfightModel().getMobiles();
 		for (IMobile temp : list) {
 			if (temp.isWeapon()) {
-				
+				if (this.getPosition().getX() + this.getWidth() / 2 > temp.getPosition().getX() - temp.getWidth() / 2
+					&& this.getPosition().getX() - this.getWidth() / 2 < temp.getPosition().getX() + temp.getWidth() / 2
+					&& this.getPosition().getY() + this.getHeight() / 2 > temp.getPosition().getY() - temp.getHeight() / 2
+					&& this.getPosition().getY() - this.getHeight() / 2 < temp.getPosition().getY() + temp.getHeight() / 2) {
+						return true;
+				}
 			}
 		}
+		return false;
 	}
 
-} 
+}
