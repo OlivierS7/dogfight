@@ -22,7 +22,8 @@ public class Missile extends Mobile {
 	}
 
 	public void move() {
-
+		super.move();
+		this.distanceTraveled+=SPEED;
 	}
 
 	public boolean isWeapon() {

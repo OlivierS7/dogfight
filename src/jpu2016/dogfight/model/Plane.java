@@ -1,5 +1,7 @@
 package jpu2016.dogfight.model;
 
+import java.util.ArrayList;
+
 public class Plane extends Mobile {
 
 	private static int SPEED = 2;
@@ -13,11 +15,16 @@ public class Plane extends Mobile {
 	}
 
 	public boolean isPlayer(int player) {
-		return false;
+		return this.player == player;
 	}
 
 	public boolean hit() {
-		return false;
+		ArrayList<IMobile> list = this.getDogfightModel().getMobiles();
+		for (IMobile temp : list) {
+			if (temp.isWeapon()) {
+				
+			}
+		}
 	}
 
 }
