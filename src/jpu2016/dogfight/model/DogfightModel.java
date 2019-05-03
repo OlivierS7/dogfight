@@ -1,4 +1,4 @@
-package jpu2016.dofight.model;
+package jpu2016.dogfight.model;
 
 public class DogfightModel {
 
