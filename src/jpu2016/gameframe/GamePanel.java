@@ -17,11 +17,11 @@ public class GamePanel extends JPanel implements Observer {
 	
 	@Override
 	public void update(Observable arg0, Object arg1) {
-		
+		repaint();
 	}
 	
 	public void paintComponent (Graphics graphic) {
-		
+		graphicsBuilder.applyModelToGraphic(graphic, this);
 	}
 	
 }
