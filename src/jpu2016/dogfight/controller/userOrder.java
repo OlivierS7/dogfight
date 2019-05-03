@@ -5,7 +5,6 @@ public class userOrder implements IUserOrder{
 
 	public int getPlayer() {
 		return player;
-		
 	}
 
 	@Override
