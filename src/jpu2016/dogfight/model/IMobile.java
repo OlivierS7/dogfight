@@ -3,7 +3,7 @@ package jpu2016.dogfight.model;
 import java.awt.Image;
 
 public interface IMobile {
-	
+	 
 	public Direction getDirection();
 
 	public void setDIrection(Direction direction);

@@ -21,7 +21,7 @@ public class Position {
 		this.maxY = position.maxY;
 	}
 
-	public double getX() {
+	public double getX() { 
 		return x;
 	}
 

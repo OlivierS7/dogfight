@@ -20,7 +20,7 @@ public class DogfightModel extends Observable implements IDogfightModel{
 		this.sky = new Sky(dimension);
 	}
 	@Override
-	public void addMobile(IMobile Mobile) {
+	public void addMobile(IMobile Mobile) { 
 		Mobile.setDogfightModel(this);
 		this.mobiles.add(Mobile);
 	}
