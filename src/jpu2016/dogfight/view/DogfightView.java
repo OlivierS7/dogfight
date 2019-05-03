@@ -30,7 +30,6 @@ public class DogfightView implements IViewSystem, Runnable {
 
 	@Override
 	public void closeAll() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 	}
 	
