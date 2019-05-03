@@ -13,21 +13,43 @@ public class Missile extends Mobile {
 		super(direction, position, new Dimension(WIDTH, HEIGHT), SPEED, IMAGE);
 	}
 
-	public final int getWidthWithADirection(Direction direction) {
-		return 0;
+	public static int getWidth(Direction direction) {
+		switch (direction) {
+		case UP:
+			return WIDTH;
+		case DOWN:
+			return WIDTH;
+		case LEFT:
+			return HEIGHT;
+		case RIGHT:
+			return HEIGHT;
+		default:
+			return 0;
+		}
 	}
 
-	public final int getHeightWithADirection(Direction direction) {
-		return 0;
+	public static int getHeight(Direction direction) {
+		switch (direction) {
+		case UP:
+			return HEIGHT;
+		case DOWN:
+			return HEIGHT;
+		case LEFT:
+			return WIDTH;
+		case RIGHT:
+			return WIDTH;
+		default:
+			return 0;
+		}
 	}
 
 	public void move() {
 		super.move();
-		this.distanceTraveled+=SPEED;
+		this.distanceTraveled += SPEED;
 	}
 
 	public boolean isWeapon() {
 		return true;
-	} 
+	}
 
 }
