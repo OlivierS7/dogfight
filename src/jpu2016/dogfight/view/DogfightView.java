@@ -25,12 +25,13 @@ public class DogfightView implements IViewSystem, Runnable {
 
 	@Override
 	public void displayMessage(String msg) {
-		
+		displayMessage("Que la partie commence !");
 	}
 
 	@Override
 	public void closeAll() {
-		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
 	}
 	
 	
