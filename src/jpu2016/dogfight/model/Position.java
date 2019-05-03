@@ -15,7 +15,10 @@ public class Position {
 	}
 
 	public Position(Position position) {
-
+		this.x = position.x;
+		this.y = position.y;
+		this.maxX = position.maxX;
+		this.maxY = position.maxY;
 	}
 
 	public double getX() {
